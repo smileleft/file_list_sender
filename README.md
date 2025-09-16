@@ -13,3 +13,21 @@ python file_rabbitmq_app.py \
 ```
 
 ## Stop and New Start
+
+```
+python file_rabbitmq_app.py \
+    --directory /path/to/scan \
+    --reset-state
+```
+
+## Message Format
+
+```
+{
+  "batch_number": 15,
+  "batch_id": "batch_15_1710502245",
+  "file_count": 100,
+  "file_paths": [...],
+  "timestamp": "2024-03-15T14:30:45.123456"
+}
+```
